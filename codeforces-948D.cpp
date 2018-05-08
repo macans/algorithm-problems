@@ -23,11 +23,9 @@ struct node{
 };
 
 void add_node(int x, node *cur){
-    //printf("add_node %d\n", x);
     int k = 30;
     while(k>=0){
         int y = x >> k;
-        //printf("x=%d, y=%d, k=%d\n", x, y, k);
         if(cur->child[y] == NULL){
             cur->child[y] = new node();
             cur = cur->child[y];
@@ -46,16 +44,12 @@ int find_node(int i, int x, node *cur){
     int res = 0;
     while(k >= 0){
         int y = x >> k;        
-        //printf("before:i=%d, x=%d, y=%d, k=%d\n", i, x, y, k);
         if(cur->child[y] == NULL || cur->child[y]->value == 0){
             y = y ^ 1;
             ans[i] = (ans[i] << 1) | 1;
-            //printf("ans[%d]=%d\n", i, ans[i]);
         } else{
             ans[i] <<= 1;
-            //printf("ans[%d]=%d\n", i, ans[i]);
         }
-        //printf("after:i=%d, x=%d, y=%d, k=%d\n", i, x, y, k);
         res = (res << 1) + y;
         cur = cur->child[y];
         x = x & ((1 << k--) - 1);
