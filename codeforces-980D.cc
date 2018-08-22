@@ -7,14 +7,15 @@
 #include <cstdio>
 #include <cmath>
 #include <cstring>
-
+#include <set>
+#include <algorithm>
 #define maxn 5005
 using namespace std;
 
 int main(){
+    //freopen("in.txt", "r", stdin);
     int n;
-    int a[maxn], ans[maxn];
-    int vis[maxn << 1];
+    int a[maxn], ans[maxn], b[maxn];
     while(~scanf("%d", &n)){
         for (int i = 0; i < n; ++i){
             scanf("%d", &a[i]);
@@ -26,29 +27,30 @@ int main(){
                 }
             }
         }
-        memset(ans, 0, sizeof(ans));
-        for(int i = 1; i <= n; i++){
-            int cnt = 0;
-            memset(vis, 0, sizeof(vis));
-            for(int j = 0; j < i; ++j){
-                if(!vis[a[j] + maxn]){
-                    ++cnt;
-                }
-                ++vis[a[j] + maxn];
-            }
-            ++ans[cnt];
-            for(int j = i; j < n; ++j){
-                --vis[a[j - i] + maxn];
-                if(!vis[a[j - i] + maxn]){
-                    --cnt;
-                }
-                if(!vis[a[j] + maxn]){
-                    ++cnt;
-                }
-                ++vis[a[j] + maxn];                    
-                ++ans[cnt];
-            }
+        for(int i = 0; i < n; ++i){
+            b[i] = a[i];
         }
+        sort(b, b + n);
+        int m = unique(b, b + n) - b;
+        for(int i = 0; i < n; ++i){
+            a[i] = lower_bound(b, b + m, a[i]) - b;
+        }
+        int pos0 = lower_bound(b, b + m, 0) - b;
+        if(b[pos0] != 0){
+            pos0 = -1;
+        }
+        memset(ans, 0, sizeof(ans));
+       for(int i = 0; i < n; ++i){
+           int cnt = 0;
+           memset(b, 0, sizeof(b));
+           for(int j = i; j < n; ++j){
+               if(a[j] != pos0 && b[a[j]] == 0){
+                   ++cnt;
+               }
+               b[a[j]] = 1;
+               ++ans[max(cnt, 1)];
+           }
+       }
         for(int i = 1; i <= n; ++i){
             printf("%d ", ans[i]);
         }
