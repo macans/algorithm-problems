@@ -3,7 +3,8 @@
    *  Created On : 2018-9-2 11:57:27
    *  File : topcoder-10007-RoyalTreasurer.cc
    ********************************************/
-#include <bits/stdc++.h>
+
+#include <iostream>
 
 using namespace std;
 

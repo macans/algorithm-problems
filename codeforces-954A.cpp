@@ -4,7 +4,7 @@
 *  File : codeforces-954A.cpp
 *******************************************/
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

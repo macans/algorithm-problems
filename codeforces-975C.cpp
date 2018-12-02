@@ -3,7 +3,9 @@
 *  Created On : 2018-05-08
 *  File : codeforces-975C.cpp
 *******************************************/
-#include <bits/stdc++.h>
+#include <cstring>
+#include <cstdio>
+#include <algorithm>
 
 const int maxn = 200005;
 using namespace std;

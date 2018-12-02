@@ -35,12 +35,5 @@ public:
 };
 
 int main(){
-    Solution s;
-    int t[] = {[1,0,3,4,3]};
-    vector<int> tt(t, t + 3);
-    cout << 1 << endl;
-    printf("%d\n", s.totalFruit(tt));
-    set<int> ss;
-    ss.s
 	return 0;
 }
