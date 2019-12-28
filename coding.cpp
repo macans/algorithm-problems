@@ -1,41 +1,25 @@
-
-#include <cmath>
+#include <iostream>
 #include <cstdio>
+#include <fstream>
 #include <algorithm>
-#include <iostream> 
+#include <cmath>
+#include <deque>
+#include <vector>
+#include <queue>
+#include <string>
+#include <cstring>
+#include <map>
+#include <stack>
+#include <set>
+#define ll long long
+#define INF 0x3f3f3f3f
+#define OPEN_FILE
 
 using namespace std;
 
 int main(){
-    int m, n, p, k;
-    int a[100005], sum[100005];
-    while(~scanf("%d", &m)){
-        while(m--){
-            scanf("%d%d%d", &n, &p, &k);
-            for(int i = 0; i < n; i++){
-                scanf("%d", &a[i]);
-            }
-            sort(a, a + n);
-            sum[0] = a[0];
-            sum[1] = a[1];
-            for(int i = 2; i < n; i++){
-                sum[i] = sum[i - k] + a[i];
-            }
-            int left = 0, right = n;
-            while(right - left > 1){
-                int mid = (left + right) >> 1;
-                if(sum[mid] > p){
-                    right = mid - 1;
-                }
-                else{
-                    left = mid;
-                }
-            }
-            int ans = 0;
-            if(sum[left] <= p){
-                ans = left + 1;
-            }
-            printf("%d\n", ans);
-        }
-    }
+#ifdef OPEN_FILE
+    //freopen("in.txt", "r", stdin);
+#endif
+
 }
