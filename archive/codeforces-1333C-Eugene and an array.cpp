@@ -1,6 +1,7 @@
 /**
  * @authors: https://github.com/macans
  * @date: 2020-04-19 23:09:35
+ * 思维 前缀和
  */
 
 #include <iostream>
