@@ -31,22 +31,25 @@ int main(){
 #ifdef OPEN_FILE
 	//freopen("in.txt", "r", stdin);
 #endif 
-	int u, v;
+	ll u, v;
 	cin >> u >> v;
 	if(u > v || ((v - u) & 1)){
 		cout << -1 << endl;
 		return 0;
 	}
-	if(u == 0)
-	if(u == v){
-		printf("1\n%d\n", u);
+	if(v == 0){
+		printf("0\n");
 		return 0;
 	}
-	int x = (v - u) >> 1;
+	if(u == v){
+		printf("1\n%lld\n", u);
+		return 0;
+	}
+	ll x = (v - u) >> 1;
 	if((u ^ x )== u + x){
-		printf("2\n%d %d\n", u + x, x);
+		printf("2\n%lld %lld\n", u + x, x);
 	}
 	else{		
-		printf("3\n%d %d %d\n", u, x, x);
+		printf("3\n%lld %lld %lld\n", u, x, x);
 	}
 }
