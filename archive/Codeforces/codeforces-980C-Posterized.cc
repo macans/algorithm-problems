@@ -2,7 +2,8 @@
    *  Author : https://github.com/macans
    *  Created On : 2018-5-20 16:01:31
    *  File : codeforces-980C.cc
-   * 贪心，每次尽可能的取最小的左端点就行了
+   * 
+   * Choose largest left element at each operation
    ********************************************/
 #include <cstdio>
 #include <algorithm>
