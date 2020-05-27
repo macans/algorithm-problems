@@ -24,13 +24,12 @@ void get_prime(){
 
 int main(){
     freopen("in.txt", "w", stdout);
-	get_prime();
-    int n = 200000;
-	n--;
-	cout << 10 << " ";
-    while(n--){
-        cout << 170777 << " ";
-    }
+	int n = 1000000, m = 100;
+	cout << n << " " << m << "\n";
+	while(n--){
+		cout << rand() % 1000000 - 500000 + 1 << " ";
+	}
+	cout << "\n";
     cout << endl;
     fclose(stdout);
 }
