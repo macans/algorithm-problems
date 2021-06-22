@@ -1,4 +1,4 @@
-package codeforces.r692;
+package Codeforces.R692;
 
 import java.io.File;
 import java.io.IOException;

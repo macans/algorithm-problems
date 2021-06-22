@@ -1,4 +1,4 @@
-package codeforces.r696;
+package Codeforces.R696;
 
 import java.util.Scanner;
 
