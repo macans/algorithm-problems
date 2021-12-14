@@ -44,8 +44,8 @@ public class DifferentDivisors {
             while (left < right - 1 && prime[right] - prime[left] > d) {
                 ++left;
             }
-
             System.out.println(prime[left] * prime[right]);
         }
+        scanner.close();
     }
 }
