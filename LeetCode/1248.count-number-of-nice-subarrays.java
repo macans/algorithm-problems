@@ -19,9 +19,6 @@ class Solution {
         if(cnt < k) {
             return 0;
         }
-        /*
-        0 1 3 4
-        */
         int left = 0, right = k - 1;
         int lastLeft = -1, nextRight;
         int ans = 0;
