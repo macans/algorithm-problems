@@ -1,4 +1,4 @@
-package Codeforces.R724;
+package R724;
 
 /**
  * @author macinchang
