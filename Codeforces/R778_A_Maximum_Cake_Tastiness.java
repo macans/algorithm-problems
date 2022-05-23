@@ -1,26 +1,23 @@
-package R778.A;
 
 import java.util.Scanner;
 
 // <https://codeforces.com/contest/1654/problems>
-public class Solution {
+public class R778_A_Maximum_Cake_Tastiness {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while(scanner.hasNext()) {
+        while (scanner.hasNext()) {
             int t = scanner.nextInt();
-            while(t-- > 0) {
+            while (t-- > 0) {
                 int n = scanner.nextInt();
                 long a = Long.MIN_VALUE, b = Long.MIN_VALUE;
-                for(int i = 0; i < n; i++) {
+                for (int i = 0; i < n; i++) {
                     long x = scanner.nextLong();
-                    if(x > a) {
+                    if (x > a) {
                         b = a;
                         a = x;
-                    }
-                    else if(x == a) {
+                    } else if (x == a) {
                         b = a;
-                    }
-                    else {
+                    } else {
                         b = Math.max(x, b);
                     }
                 }

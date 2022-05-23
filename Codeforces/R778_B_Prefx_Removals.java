@@ -1,5 +1,5 @@
 
-package R778.B;
+
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Created on 2022-03-20 19:55:03
  */
 
-public class Solution {
+public class R778_B_Prefx_Removals {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean[] cnt = new boolean[26];
