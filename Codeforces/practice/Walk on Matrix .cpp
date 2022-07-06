@@ -1,8 +1,8 @@
 /**
  * @authors: https://github.com/macans
- * @date: 2020-05-04 23:57:08
- * 
- * 简单题
+ * @date: 2020-05-03 11:09:31
+ * codeforces-1332D
+ * 矩阵构造
  */
 
 #include <iostream>
@@ -29,18 +29,15 @@ using namespace std;
 
 int main(){
 #ifdef OPEN_FILE
-	//freopen("in.txt", "r", stdin);
+	freopen("in.txt", "r", stdin);
 #endif 
-	int t;
-	cin >> t;
-	int n, m, x, y;
-	while(t--){
-		cin >> n >> m >> x >> y;
-		x++;
-		y++;
-		int ans = max(
-			max((n - x) * m, (m - y) * n), 
-			max((x - 1) * m, (y - 1) * n));
-		cout << ans << endl;
+	int k;
+	int x = 1;
+	cin >> k;
+	while(x <= k){
+		x <<= 1;
 	}
+	cout << "2 3" << endl;
+	cout << x + k << " " << k << " " << 0 << endl;
+	cout << x << " " << x + k << " " << k << endl;
 }

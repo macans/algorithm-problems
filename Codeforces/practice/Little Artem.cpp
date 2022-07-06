@@ -1,8 +1,7 @@
 /**
  * @authors: https://github.com/macans
- * @date: 2020-05-03 11:09:31
- * 
- * 矩阵构造
+ * @date: 2020-04-19 22:42:30
+ * codeforces-1333A
  */
 
 #include <iostream>
@@ -29,15 +28,23 @@ using namespace std;
 
 int main(){
 #ifdef OPEN_FILE
-	freopen("in.txt", "r", stdin);
+    freopen("in.txt", "r", stdin);
 #endif 
-	int k;
-	int x = 1;
-	cin >> k;
-	while(x <= k){
-		x <<= 1;
-	}
-	cout << "2 3" << endl;
-	cout << x + k << " " << k << " " << 0 << endl;
-	cout << x << " " << x + k << " " << k << endl;
+    int T;
+    int n, m;
+    scanf("%d", &T);
+    while(T--){
+        scanf("%d%d", &n, &m);
+        printf("W");
+        for(int i = 1; i < m; i++){
+            printf("B");
+        }
+        printf("\n");
+        for(int i = 1; i < n; i++){
+            for(int j = 0; j < m; j++){
+                printf("B");
+            }
+            printf("\n");
+        }
+    }
 }

@@ -1,6 +1,7 @@
 /**
  * @authors: https://github.com/macans
  * @date: 2020-04-21 23:50:17
+ * codeforces-1332C
  * 回文串
  */
 

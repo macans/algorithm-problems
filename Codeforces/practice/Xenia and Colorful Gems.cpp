@@ -2,6 +2,8 @@
  * @authors: https://github.com/macans
  * @date: 2020-04-19 00:40:53
  * 二分
+ * 
+ * codeforces-1337D
  */
 
 #include <iostream>

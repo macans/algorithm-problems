@@ -1,4 +1,6 @@
 /**
+ * codeforces-1339C
+ * 
  * @authors: https://github.com/macans
  * @date: 2020-04-19 21:20:07
  */

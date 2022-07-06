@@ -1,6 +1,7 @@
 /**
  * @authors: https://github.com/macans
  * @date: 2020-04-22 01:10:22
+ * codeforces-1325C
  */
 
 #include <iostream>

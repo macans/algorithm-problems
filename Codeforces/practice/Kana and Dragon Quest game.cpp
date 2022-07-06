@@ -1,3 +1,6 @@
+/*
+codeforces-1337B
+*/
 #include <iostream>
 #include <cstdio>
 #include <fstream>
@@ -25,9 +28,21 @@ int main(){
     int T;
     scanf("%d", &T);
     while(T--){
-        int a, b, c, d;
-        scanf("%d%d%d%d", &a, &b, &c, &d);
-        printf("%d %d %d\n", b, c, c);
+        int a, n, m;
+        scanf("%d%d%d", &a, &n, &m);
+        int cnt_n = 0, cnt_m = 0;
+        while(a > 20 && n--){
+            a = (a >> 1) + 10;
+        }
+        while(m--){
+            a -= 10;
+        }
+        if(a <= 0){
+            printf("YES\n");
+        }
+        else{
+            printf("NO\n");
+        }
     }
 }
 

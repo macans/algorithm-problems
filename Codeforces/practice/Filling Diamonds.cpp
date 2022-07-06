@@ -1,3 +1,10 @@
+/**
+ * @authors: https://github.com/macans
+ * @date: 2020-04-19 09:03:31
+ * 
+ * codeforces-1339A
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <fstream>
@@ -20,26 +27,13 @@ using namespace std;
 
 int main(){
 #ifdef OPEN_FILE
-   //freopen("in.txt", "r", stdin);
+    //freopen("in.txt", "r", stdin);
 #endif 
     int T;
+    ll n;
     scanf("%d", &T);
     while(T--){
-        int a, n, m;
-        scanf("%d%d%d", &a, &n, &m);
-        int cnt_n = 0, cnt_m = 0;
-        while(a > 20 && n--){
-            a = (a >> 1) + 10;
-        }
-        while(m--){
-            a -= 10;
-        }
-        if(a <= 0){
-            printf("YES\n");
-        }
-        else{
-            printf("NO\n");
-        }
+        scanf("%lld", &n);
+        printf("%lld\n", n);
     }
 }
-
