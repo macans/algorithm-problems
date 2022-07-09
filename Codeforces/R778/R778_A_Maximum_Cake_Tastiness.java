@@ -1,3 +1,4 @@
+package R778;
 
 import java.util.Scanner;
 
