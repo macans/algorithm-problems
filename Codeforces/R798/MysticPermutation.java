@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 
  * @author macinchang
  */
-public class B {
+public class MysticPermutation {
 
     public static void main(String[] args) throws Exception {
         File inFile = new File("/Users/zhangji05/Code/algorithm-problems/in.txt");
