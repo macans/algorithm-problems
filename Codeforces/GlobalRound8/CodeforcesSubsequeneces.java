@@ -1,4 +1,4 @@
-package globalround8;
+package GlobalRound8;
 
 import java.util.Scanner;
 import java.io.File;
