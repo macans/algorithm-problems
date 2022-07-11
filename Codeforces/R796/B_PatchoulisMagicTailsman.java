@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 
  * @author macinchang
  */
-public class B {
+public class B_PatchoulisMagicTailsman {
 
     public static void main(String[] args) throws Exception {
         File inFile = new File("/Users/zhangji05/Code/algorithm-problems/in.txt");

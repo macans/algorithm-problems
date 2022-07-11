@@ -3,7 +3,7 @@ package R778;
 import java.util.Scanner;
 
 // <https://codeforces.com/contest/1654/problems>
-public class R778_A_Maximum_Cake_Tastiness {
+public class A_Maximum_Cake_Tastiness {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {

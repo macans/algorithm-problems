@@ -6,7 +6,7 @@ import java.util.Scanner;
  *         Created on 2022-03-27 22:27:38
  */
 
-public class R779_A {
+public class B_MarinAndPhotoshoot {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

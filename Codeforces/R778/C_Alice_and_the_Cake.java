@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 simulate the cut process, attention the exit condition to avoid time exceeding
 */
-public class R778_C_Alice_and_the_Cake {
+public class C_Alice_and_the_Cake {
     public static void main(String[] args) throws Exception {
         File inFile = new File("/Users/zhangji05/Code/algorithm-problems/in.txt");
         Scanner scanner = new Scanner(inFile);

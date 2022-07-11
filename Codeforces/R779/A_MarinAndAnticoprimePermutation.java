@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author macinchang
  * Created on  2022-03-27 22:49:14 
  */
-public class R779_B {
+public class A_MarinAndAnticoprimePermutation {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

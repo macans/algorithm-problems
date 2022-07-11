@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author macinchang
  *         Created on 2022-03-27 23:26:05
  */
-public class R779_C {
+public class C_ShinjuAndTheLostPermutation {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
