@@ -10,7 +10,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class TrainAndQueries {
+public class C_TrainAndQueries {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

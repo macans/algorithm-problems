@@ -9,7 +9,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class InfectedTree {
+public class C_InfectedTree {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

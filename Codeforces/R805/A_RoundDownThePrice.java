@@ -8,7 +8,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class RoundDownThePrice {
+public class A_RoundDownThePrice {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

@@ -8,7 +8,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class PolycapWriteAStringFromMemory {
+public class B_PolycapWriteAStringFromMemory {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

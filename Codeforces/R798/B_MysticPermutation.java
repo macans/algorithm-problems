@@ -8,12 +8,16 @@ import java.util.Scanner;
  * 
  * @author macinchang
  */
-public class MysticPermutation {
+public class B_MysticPermutation {
 
     public static void main(String[] args) throws Exception {
-        File inFile = new File("/Users/zhangji05/Code/algorithm-problems/in.txt");
-        Scanner scanner = new Scanner(inFile);
-        // Scanner scanner = new Scanner(System.in);
+        Scanner scanner;
+        if (System.getProperty("ONLINE_JUDGE") == null) {
+            File inFile = new File("in.txt");
+            scanner = new Scanner(inFile);
+        } else {
+            scanner = new Scanner(System.in);
+        }
         int t = scanner.nextInt();
         while (t-- > 0) {
             new Solver().solve(scanner);
@@ -26,27 +30,27 @@ public class MysticPermutation {
             int n = scanner.nextInt();
             int[] p = new int[n + 5];
             int[] q = new int[n + 5];
-            int[] pos = new int[n + 5];
+            q[0] = 1;
             for (int i = 1; i <= n; i++) {
                 p[i] = scanner.nextInt();
                 q[i] = i;
-                pos[i] = i;
             }
-
+            boolean no = false;
             for (int i = 1; i <= n; i++) {
-                if (p[i] != q[i]) {
-                    continue;
+                if (p[i] == q[i]) {
+                    int tmp = q[i];
+                    q[i] = q[i == n ? i - 1 : i + 1];
+                    q[i == n ? i - 1 : i + 1] = tmp;
                 }
-                for (int j = 1; j <= n; j++) {
-                    if (pos[j] > i) {
-                        int tmp = q[i];
-                        q[i] = q[pos[j]];
-                        q[pos[j]] = tmp;
-                        tmp = pos[j];
-                        pos[j] = i;
-                        pos[q[pos[j]]] = tmp;
-                    }
+            }
+            for (int i = 1; i <= n; i++) {
+                if (p[i] == q[i]) {
+                    no = true;
                 }
+            }
+            if (no) {
+                System.out.println(-1);
+                return;
             }
             for (int i = 1; i <= n; i++) {
                 System.out.print(q[i] + " ");

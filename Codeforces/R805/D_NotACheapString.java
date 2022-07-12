@@ -10,7 +10,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class NotACheapString {
+public class D_NotACheapString {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
