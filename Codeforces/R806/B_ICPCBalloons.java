@@ -1,14 +1,14 @@
-package R798;
+package R806;
 
 import java.util.Scanner;
 import java.io.File;
 
 /**
- * Created on 2022-07-10 00:01:36
+ * Created on 2022-07-12 21:28:34
  * 
  * @author macinchang
  */
-public class C_InfectedTree {
+public class B_ICPCBalloons {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
@@ -26,28 +26,20 @@ public class C_InfectedTree {
     }
 
     public static class Solver {
-        int[] left, right, son;
-
         public void solve(Scanner scanner) {
-            /*
-             * dp[i] 表示 i 感染后所能保留的最多节点数
-             * son[i] 表示 i 的子节点数量
-             */
             int n = scanner.nextInt();
-            int x, y;
-            left = new int[n];
-            right = new int[n];
-            son = new int[n];
-            for (int i = 0; i < n - 1; i++) {
-                x = scanner.nextInt();
-                y = scanner.nextInt();
-                if (left[x] == 0) {
-                    left[x] = y;
+            char[] s = scanner.next().toCharArray();
+            boolean[] mask = new boolean[26];
+            int res = 0;
+            for (int i = 0; i < s.length; i++) {
+                if (mask[s[i] - 'A']) {
+                    res++;
                 } else {
-                    right[x] = y;
+                    res += 2;
+                    mask[s[i] - 'A'] = true;
                 }
             }
-
+            System.out.println(res);
         }
     }
 }
