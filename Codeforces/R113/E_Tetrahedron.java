@@ -1,4 +1,4 @@
-package Practice;
+package R113;
 
 import java.util.Scanner;
 import java.io.File;
@@ -16,7 +16,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class Tetrahedron {
+public class E_Tetrahedron {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

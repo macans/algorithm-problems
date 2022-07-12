@@ -1,4 +1,4 @@
-package Practice;
+package R303;
 
 import java.util.Scanner;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class Woodcutters {
+public class C_Woodcutters {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

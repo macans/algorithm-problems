@@ -51,7 +51,6 @@ int main(){
             s.insert(sum[++r]);
         }
         ans += r - l;
-        //printf("%d %d %lld\n", l, r, ans);
         s.erase(sum[l++]);
         r = max(r, l);
     }

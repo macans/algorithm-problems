@@ -1,4 +1,4 @@
-package Practice;
+package Edu92;
 
 import java.util.Scanner;
 import java.io.File;
@@ -8,7 +8,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class GoodString {
+public class C_GoodString {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

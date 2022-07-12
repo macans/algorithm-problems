@@ -1,14 +1,15 @@
-package Practice;
+package R723;
 
 import java.util.Scanner;
 import java.io.File;
 
 /**
+ * <https://codeforces.com/problemset/problem/1526/C1>
  * Created on 2022-07-08 00:15:13
  * 
  * @author macinchang
  */
-public class PotionsEasy {
+public class C1_PotionsEasy {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

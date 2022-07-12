@@ -1,4 +1,4 @@
-package Practice;
+package R656;
 
 import java.util.Scanner;
 import java.io.File;
@@ -10,7 +10,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class AGoodString {
+public class D_AGoodString {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
