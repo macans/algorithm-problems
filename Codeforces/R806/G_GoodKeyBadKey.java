@@ -8,7 +8,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class GG {
+public class G_GoodKeyBadKey {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
