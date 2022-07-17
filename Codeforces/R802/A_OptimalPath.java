@@ -1,14 +1,15 @@
-package R804;
+package R802;
+
 
 import java.util.Scanner;
 import java.io.File;
 
 /**
- * Created on 2022-07-09 20:00:28
+ * Created on  2022-06-19 18:22:27 
  * 
  * @author macinchang
  */
-public class TheThirdThresNumberProblem {
+public class A_OptimalPath {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
@@ -27,14 +28,11 @@ public class TheThirdThresNumberProblem {
 
     public static class Solver {
         public void solve(Scanner scanner) {
-            int n = scanner.nextInt();
-            int a = 0, b = n / 2, c = (n + 1) / 2;
-            if ((a ^ b) + (b ^ c) + (a ^ c) != n) {
-                System.out.println(-1);
-            } else {
-                System.out.print(a + " " + b + " " + c);
-                System.out.println();
-            }
+            long n = scanner.nextLong(), m = scanner.nextLong();
+            long tmp = n * ((n - 1) * m + 2) / 2;
+            long a = tmp + (m - 1L) * n + m * (m + 1) / 2L - m;
+            long b = tmp + m * (n- 1L) * m + m * (m + 1) / 2L - (m * (n - 1L) + 1);
+            System.out.println(Math.min(a, b));
         }
     }
 }

@@ -9,7 +9,7 @@ import java.math.BigInteger;
  * 
  * @author macinchang
  */
-public class PalindromicNumbers {
+public class B_PalindromicNumbers {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

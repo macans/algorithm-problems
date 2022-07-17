@@ -8,7 +8,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class AlmostTernaryMatrix {
+public class B_AlmostTernaryMatrix {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

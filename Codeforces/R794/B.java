@@ -1,14 +1,14 @@
-package R802;
+package R794;
 
 import java.util.Scanner;
 import java.io.File;
 
 /**
- * Created on 2022-06-19 23:36:41
+ * Created on 2022-07-16 15:42:50
  * 
  * @author macinchang
  */
-public class HelpingTheNature {
+public class B {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
@@ -19,26 +19,35 @@ public class HelpingTheNature {
             scanner = new Scanner(System.in);
         }
         int t = scanner.nextInt();
+        Solver solver = new Solver(scanner);
         while (t-- > 0) {
-            new Solver().solve(scanner);
+            solver.solve();
         }
         scanner.close();
     }
 
     public static class Solver {
-        public void solve(Scanner scanner) {
-            int n = scanner.nextInt();
-            long[] a = new long[n];
+        private Scanner sc;
+
+        Solver(Scanner scanner) {
+            this.sc = scanner;
+        }
+
+        public void solve() {
+            int n = sc.nextInt();
+            int[] a = new int[n];
+            int ans = 0;
             for (int i = 0; i < n; i++) {
-                a[i] = scanner.nextLong();
+                a[i] = sc.nextInt();
+
             }
-            long ans = 0;
-            for(int i = 1; i < n; i++) {
-                ans += Math.abs(a[i] - a[i - 1]);
+            for (int i = 1; i < n; i++) {
+                if (a[i] < a[i - 1]) {
+                    ++ans;
+                    ++i;
+                }
             }
-            long r = (ans + a[n - 1] - a[0]) / 2;
-            
-            System.out.println(ans + Math.abs(a[n - 1] - r));
+            System.out.println(ans);
         }
     }
 }

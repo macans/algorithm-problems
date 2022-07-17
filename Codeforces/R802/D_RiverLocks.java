@@ -9,7 +9,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class RiverLocks {
+public class D_RiverLocks {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

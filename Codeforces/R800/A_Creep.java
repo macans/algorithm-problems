@@ -8,7 +8,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class Creep {
+public class A_Creep {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;

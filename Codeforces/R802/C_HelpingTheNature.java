@@ -1,14 +1,14 @@
-package R805;
+package R802;
 
 import java.util.Scanner;
 import java.io.File;
 
 /**
- * Created on 2022-07-11 00:00:19
+ * Created on 2022-06-19 23:36:41
  * 
  * @author macinchang
  */
-public class SplitIntoTwoSets {
+public class C_HelpingTheNature {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
@@ -26,33 +26,19 @@ public class SplitIntoTwoSets {
     }
 
     public static class Solver {
-        class Edge {
-            int from, to;
-            Edge next;
-
-            Edge(int from, int to, Edge next) {
-                this.from = from;
-                this.to = to;
-                this.next = next;
-            }
-        }
-
         public void solve(Scanner scanner) {
             int n = scanner.nextInt();
-            int x, y;
-            int[] in = new int[n + 1];
-            boolean flag = true;
-            Edge[] edges = new Edge[n + 1];
+            long[] a = new long[n];
             for (int i = 0; i < n; i++) {
-                x = scanner.nextInt();
-                y = scanner.nextInt();
+                a[i] = scanner.nextLong();
             }
-            for (int i = 1; i <= n; i++) {
-                if (in[i] != 2) {
-                    flag = false;
-                }
+            long ans = 0;
+            for(int i = 1; i < n; i++) {
+                ans += Math.abs(a[i] - a[i - 1]);
             }
-            System.out.println(flag ? "YES" : "NO");
+            long r = (ans + a[n - 1] - a[0]) / 2;
+            
+            System.out.println(ans + Math.abs(a[n - 1] - r));
         }
     }
 }
