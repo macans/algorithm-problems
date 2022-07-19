@@ -8,7 +8,7 @@ import java.io.File;
  * 
  * @author macinchang
  */
-public class A {
+public class A_EverythingEverwhereAllButOne {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner;
