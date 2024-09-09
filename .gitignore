@@ -6,3 +6,6 @@ in.txt
 *.class
 coding.cpp
 datagen.cpp
+.metals/
+.DS_Store
+

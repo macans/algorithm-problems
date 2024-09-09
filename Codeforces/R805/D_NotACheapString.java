@@ -3,7 +3,6 @@ package R805;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.SortedMap;
 import java.io.File;
 
 /**
@@ -32,7 +31,6 @@ public class D_NotACheapString {
         class Node implements Comparable<Node> {
             char ch;
             int pos;
-            SortedMap
 
             Node(char ch, int pos) {
                 this.ch = ch;
